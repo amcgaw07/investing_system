@@ -24,11 +24,10 @@ public class Controller
     {
         scanner = new Scanner(System.in);
         Class.forName("org.postgresql.Driver");
-        //String url = "jdbc:postgresql://localhost:5432/";
-        String url = "jdbc:postgresql://class3.cs.pitt.edu:5432/";
+        String url = "jdbc:postgresql://localhost:5432/";
         Properties props = new Properties();
-        props.setProperty("user", "ajm279");
-        props.setProperty("password", "");
+        props.setProperty("user", " ");
+        props.setProperty("password", " ");
         conn = DriverManager.getConnection(url, props);
         st = conn.createStatement();
     }
